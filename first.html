@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personality Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<h1>What Should I Impulse Purchase >:)</h1>
+
+
+		<script type="text/javascript">
+
+
+
+
+		function myfunction(){
+			var checked_first = 0;
+			var checked_second = 0;
+			var checked_third = 0;
+			var checked_fourth = 0;
+			var checked_fifth = 0;
+			var dog1 = 0;
+			var dog2 = 0;
+			var coff1 = 0;
+			var coff2 = 0;
+			var beer = 0;
+			var spicy1 = 0;
+			var inputs = document.getElementsByTagName('input');
+			for(var i = 0; i < inputs.length; i++){
+				if(inputs[i].checked){
+				if (inputs[i].id == "r1"){
+					checked_first += 1;
+					}
+				else if(inputs[i].id == "r2"){
+					checked_second += 1;
+					}
+				else if(inputs[i].id == "r3"){
+					checked_third += 1;
+					}
+				else if(inputs[i].id == "r4"){
+					checked_fourth += 1;
+					}
+				else if(inputs[i].id == "r5"){
+					checked_fifth += 1;
+					}
+				else if(inputs[i].id == "dog1"){
+					dog1 += 1;
+
+				}
+				else if(inputs[i].id == "dog2"){
+					dog2 += 1;
+
+				}
+				else if(inputs[i].id == "coff1"){
+					coff1 += 1;
+
+				}
+				else if(inputs[i].id == "coff2"){
+					coff2 += 1;
+
+				}
+				else if(inputs[i].id == "beer"){
+					beer += 1;
+
+				}
+				else if(inputs[i].id == "spicy1"){
+					spicy1 += 1;
+
+				}
+
+				}
+			}
+
+			max = Math.max(checked_first,checked_second,checked_third,checked_fourth,checked_fifth)
+			
+			if(dog1 == 1){
+				window.location.replace("Product Pages/doggo.html");
+
+				
+
+
+			}else if((coff1 >= 1)|| (coff2 >= 1)){
+				window.location.replace("Product Pages/cofee.html");
+
+			}
+			else if(beer >= 1){
+				window.location.replace("Product Pages/beer.html");
+			}
+			else if(spicy1 >= 1){
+				window.location.replace("Product Pages/spicy.html");
+			}
+			else{
+			
+			if (checked_first == max){
+
+				if (Math.random() <= 0.5){
+					window.location.replace("Product Pages/cereal.html");
+
+
+
+	
+				}else{
+					window.location.replace("Product Pages/scalp.html");
+
+				
+
+
+				}
+
+			}
+			else if(checked_second ==max){
+				if (Math.random() <= 0.5){
+					window.location.replace("Product Pages/Toothpaste.html");
+
+				}else{
+					window.location.replace("Product Pages/Toothpaste.html");
+
+					
+				}
+
+			}
+			else if(checked_third ==max){
+				if (Math.random() <= 0.5){
+					window.location.replace("Product Pages/straw.html");
+
+				}else{
+					window.location.replace("Product Pages/roller.html");
+
+					
+				}
+
+			}
+			else if(checked_fourth ==max){
+				if (Math.random() <= 0.5){
+					window.location.replace("Product Pages/scale.html");
+
+
+
+				}else{
+					window.location.replace("Product Pages/instpot.html");
+
+					
+				}
+
+			}
+			else if(checked_fifth ==max){
+					window.location.replace("Product Pages/blanket.html");
+				}
+
+
+			
+			else{
+				if(Math.random()<=.5){
+					window.location.replace("Product Pages/scalp.html");
+
+				}else{
+					window.location.replace("Product Pages/cofee.html");
+
+				}
+			}
+
+		}
+	}
+
+	
+
+	
+
+
+		
+	</script>
+
+	<hr>
+	
+	<div id = "outer">
+		<div id = "inner">
+
+		
+			<h4> 1) My favorite season is Winter</h4>
+			
+			<input type = "radio" name="g" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="g" id = "r2" >Agree <br>
+			<input type = "radio" name="g" id = "r3" checked="True" >Medium <br>
+			<input type = "radio" name="g" id  ="r4" >Disagree <br>
+			<input type="radio" name="g" id = "r5" >Strongly Disagree <br>
+
+			<hr>
+			
+
+			<h4> 2) I enjoy spending time outside</h4>
+			
+			<input type = "radio" name="l" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="l" id = "r2" >Agree <br>
+			<input type = "radio" name="l" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="l" id  ="r4">Disagree <br>
+			<input type="radio" name="l" id = "r5">Strongly Disagree <br>
+
+			<hr>
+
+			<h4> 3) Friends and family are my highest priority</h4>
+
+			<input type = "radio" name="m" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="m" id = "r2" >Agree <br>
+			<input type = "radio" name="m" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="m" id  ="r4">Disagree <br>
+			<input type="radio" name="m" id = "r5">Strongly Disagree <br>
+
+			<hr>
+
+			<h4> 4) I frequently lose things</h4>
+
+			<input type = "radio" name="n" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="n" id = "r2" >Agree <br>
+			<input type = "radio" name="n" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="n" id  ="r4">Disagree <br>
+			<input type="radio" name="n" id = "r5">Strongly Disagree <br>
+
+
+			<hr>
+
+			<h4> 5) I love helping people</h4>
+
+			<input type = "radio" name="p" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="p" id = "r2" >Strong <br>
+			<input type = "radio" name="p" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="p" id  ="r4">Disagree <br>
+			<input type="radio" name="p" id = "r5">Strongly Disagree <br>
+
+			<hr>
+
+			<h4> 6) There is nothing better than a cold beer</h4>
+
+			<input type = "radio" name="q" id = "beer">Agree Strongly <br>
+			<input type = "radio" name="q" id = "r2" >Agree <br>
+			<input type = "radio" name="q" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="q" id  ="r4">Disagree <br>
+			<input type="radio" name="q" id = "r5">Strongly Disagree <br>
+
+			<hr>
+
+			<h4> 7) The first thing I do in the morning is make a coffee</h4>
+
+			<input type = "radio" name="r" id = "coff1">Agree Strongly <br>
+			<input type = "radio" name="r" id = "coff2" >Agree <br>
+			<input type = "radio" name="r" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="r" id  ="r4">Disagree <br>
+			<input type="radio" name="r" id = "r5">Strongly Disagree <br>
+
+			<hr>
+			<h4> 8) My friends would describe me as "easy going" </h4>
+
+			<input type = "radio" name="s" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="s" id = "r2" >Agree <br>
+			<input type = "radio" name="s" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="s" id  ="r4">Disagree <br>
+			<input type="radio" name="s" id = "r5">Strongly Disagree <br>
+
+			<hr>
+			<h4>9) I am reliable and independent</h4>
+
+			<input type = "radio" name="t" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="t" id = "r2" >Agree <br>
+			<input type = "radio" name="t" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="t" id  ="r4">Disagree <br>
+			<input type="radio" name="t" id = "r5">Strongly Disagree <br>
+
+			<hr>
+			<h4>10) I enjoy productivity</h4>
+
+			<input type = "radio" name="u" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="u" id = "r2" >Agree <br>
+			<input type = "radio" name="u" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="u" id  ="r4">Disagree <br>
+			<input type="radio" name="u" id = "r5">Strongly Disagree <br>
+
+
+			<hr>
+			<h4>11) I'm very curious</h4>
+			<input type = "radio" name="w" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="w" id = "r2" >Agree <br>
+			<input type = "radio" name="w" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="w" id  ="r4">Disagree <br>
+			<input type="radio" name="w" id = "r5">Strongly Disagree <br>
+
+			<hr>
+			<h4>12) I love competition and challenges </h4>
+			<input type = "radio" name="x" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="x" id = "r2" >Agree <br>
+			<input type = "radio" name="x" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="x" id  ="r4">Disagree <br>
+			<input type="radio" name="x" id = "r5">Strongly Disagree <br>
+
+			<hr>
+
+			<h4>13) I love my doggo!</h4>
+
+			<input type = "radio" name="z" id = "dog1">Agree Strongly <br>
+			<input type = "radio" name="z" id = "dog2" >Agree <br>
+			<input type = "radio" name="z" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="z" id  ="r4">Disagree <br>
+			<input type="radio" name="z" id = "r5">Strongly Disagree <br>
+
+			<hr>
+			<h4>14) I value freedom over security  </h4>
+			<input type = "radio" name="za" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="za" id = "r2" >Agree <br>
+			<input type = "radio" name="za" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="za" id  ="r4">Disagree <br>
+			<input type="radio" name="za" id = "r5">Strongly Disagree <br>
+
+			<hr>
+			<h4> 15) The spicier the food the better!</h4>
+			<input type = "radio" name="zb" id = "spicy1">Agree Strongly <br>
+			<input type = "radio" name="zb" id = "r2" >Agree <br>
+			<input type = "radio" name="zb" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="zb" id  ="r4">Disagree <br>
+			<input type="radio" name="zb" id = "r5">Strongly Disagree <br>
+
+
+			<br>
+			<br>
+			<br>
+
+
+			<button align = "middle" onclick = "myfunction()">Submit
+			</button>
+			</div>	
+			</div>
+	
+			
+
+
+
+<!--
+
+	<script type="text/javascript">
+
+
+
+
+		function myfunction(){
+			var checked_first = 0;
+			var checked_second = 0;
+			var checked_third = 0;
+			var checked_fourth = 0;
+			var checked_fifth = 0;
+			var dog1 = 0;
+			var dog2 = 0;
+			var inputs = document.getElementsByTagName('input');
+			for(var i = 0; i < inputs.length; i++){
+				if(inputs[i].checked){
+				if (inputs[i].id == "r1"){
+					checked_first += 1;
+					}
+				else if(inputs[i].id == "r2"){
+					checked_second += 1;
+					}
+				else if(inputs[i].id == "r3"){
+					checked_third += 1;
+					}
+				else if(inputs[i].id == "r4"){
+					checked_fourth += 1;
+					}
+				else if(inputs[i].id == "r5"){
+					checked_fifth += 1;
+					}
+				else if(inputs[i].id == "dog1"){
+					dog1 += 1;
+
+				}
+				else if(inputs[i].id == "dog2"){
+					dog2 += 1;
+
+				}
+
+				}
+			}
+
+			max = Math.max(checked_first,checked_second,checked_third,checked_fourth,checked_fifth)
+			
+			if((dog1 == 1) or (dog2 == 1)){
+				
+
+				
+
+
+			}else{
+			
+			if (checked_first == max){
+
+				if (Math.random() == 0){
+
+
+	
+
+
+
+				}else{
+
+				}
+
+			}
+			else if(checked_second ==max){
+				if (Math.random() == 0){
+
+				}else{
+					
+				}
+
+			}
+			else if(checked_third ==max){
+				if (Math.random() == 0){
+
+				}else{
+					
+				}
+
+			}
+			else if(checked_fourth ==max){
+				if (Math.random() == 0){
+
+				}else{
+					
+				}
+
+			}
+			else if(checked_fifth ==max){
+				if (Math.random() == 0){
+
+				}else{
+					
+				}
+
+			}
+
+		}document.write("Hello World");
+	}
+
+
+	
+
+
+		
+	</script>
+-->
+
+</body>
+</html>

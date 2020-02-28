@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>What To Buy For Him</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body >
+
+	<h1>What Should I Get Him?</h1>
+	<script type="text/javascript">
+
+
+
+
+		function myfunction(){
+			var checked_first = 0;
+			var checked_second = 0;
+			var checked_third = 0;
+			var checked_fourth = 0;
+			var checked_fifth = 0;
+			var inputs = document.getElementsByTagName('input');
+			for(var i = 0; i < inputs.length; i++){
+				if(inputs[i].checked){
+				if (inputs[i].id == "r1"){
+					checked_first += 1;
+					}
+				else if(inputs[i].id == "r2"){
+					checked_second += 1;
+					}
+				else if(inputs[i].id == "r3"){
+					checked_third += 1;
+					}
+				else if(inputs[i].id == "r4"){
+					checked_fourth += 1;
+					}
+				else if(inputs[i].id == "r5"){
+					checked_fifth += 1;
+					}
+
+
+				}
+			}
+
+			max = Math.max(checked_first,checked_second,checked_third,checked_fourth,checked_fifth)
+			
+			
+			if (checked_first == max){
+
+				if (Math.random() <= 0.5){
+					window.location.replace("guyproducts/3tops.html");
+
+
+
+	
+				}else{
+					window.location.replace("guyproducts/beard.html");
+
+
+				
+
+
+				}
+
+			}
+			else if(checked_second ==max){
+				if (Math.random() <= 0.5){
+					window.location.replace("guyproducts/backpack.html");
+					
+				}else{
+					window.location.replace("guyproducts/fleece.html");
+					
+
+					
+				}
+
+			}
+			else if(checked_third ==max){
+				if (Math.random() <= 0.5){
+					window.location.replace("guyproducts/mvmnt.html");
+
+				}else{
+					window.location.replace("guyproducts/wallet.html");
+
+					
+				}
+
+			}
+			else if(checked_fourth ==max){
+				if (Math.random() <= 0.5){
+					window.location.replace("guyproducts/beanie.html");
+
+
+
+				}else{
+					window.location.replace("guyproducts/tieclip.html");
+
+					
+				}
+
+			}
+			else if(checked_fifth ==max){
+					window.location.replace("guyproducts/belt.html");
+				}
+
+
+			
+			else{
+				if(Math.random()<=.5){
+					window.location.replace("guyproducts/suspenders.html");
+
+				}else{
+					window.location.replace("guyproducts/mvmnt.html");
+
+				}
+			}
+
+		}
+	
+
+	
+
+	
+
+
+		
+	</script>
+
+	<hr>
+		<div id = "outer" >
+			<div id = "inner">
+	
+
+		
+			<h4> 1) He enjoys sports</h4>
+			
+			<input type = "radio" name="g" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="g" id = "r2" >Agree <br>
+			<input type = "radio" name="g" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="g" id  ="r4" >Disagree <br>
+			<input type="radio" name="g" id = "r5" >Strongly Disagree <br>
+
+			<hr>
+			
+
+			<h4> 2) He enjoys spending time outside</h4>
+			
+			<input type = "radio" name="l" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="l" id = "r2" >Agree <br>
+			<input type = "radio" name="l" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="l" id  ="r4">Disagree <br>
+			<input type="radio" name="l" id = "r5">Strongly Disagree <br>
+
+			<hr>
+
+			<h4> 3) Friends and family are his highest priority</h4>
+
+			<input type = "radio" name="m" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="m" id = "r2" >Agree <br>
+			<input type = "radio" name="m" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="m" id  ="r4">Disagree <br>
+			<input type="radio" name="m" id = "r5">Strongly Disagree <br>
+
+			<hr>
+
+			<h4> 4) He has an excellent memory</h4>
+
+			<input type = "radio" name="n" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="n" id = "r2" >Agree <br>
+			<input type = "radio" name="n" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="n" id  ="r4">Disagree <br>
+			<input type="radio" name="n" id = "r5">Strongly Disagree <br>
+
+
+			<hr>
+
+			<h4> 5) He gets a great amount of satisfaction from helping others</h4>
+
+			<input type = "radio" name="p" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="p" id = "r2" >Strong <br>
+			<input type = "radio" name="p" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="p" id  ="r4">Disagree <br>
+			<input type="radio" name="p" id = "r5">Strongly Disagree <br>
+
+			<hr>
+
+			<h4> 6) He is classy</h4>
+
+			<input type = "radio" name="q" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="q" id = "r2" >Agree <br>
+			<input type = "radio" name="q" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="q" id  ="r4">Disagree <br>
+			<input type="radio" name="q" id = "r5">Strongly Disagree <br>
+
+			<hr>
+
+			<h4> 7) He is an early bird</h4>
+
+			<input type = "radio" name="r" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="r" id = "r2" >Agree <br>
+			<input type = "radio" name="r" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="r" id  ="r4">Disagree <br>
+			<input type="radio" name="r" id = "r5">Strongly Disagree <br>
+
+			<hr>
+			<h4> 8) He is motivated</h4>
+
+			<input type = "radio" name="s" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="s" id = "r2" >Agree <br>
+			<input type = "radio" name="s" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="s" id  ="r4">Disagree <br>
+			<input type="radio" name="s" id = "r5">Strongly Disagree <br>
+
+			<hr>
+			<h4>9) He is the life of the party</h4>
+
+			<input type = "radio" name="t" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="t" id = "r2" >Agree <br>
+			<input type = "radio" name="t" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="t" id  ="r4">Disagree <br>
+			<input type="radio" name="t" id = "r5">Strongly Disagree <br>
+
+			<hr>
+			<h4>10) He is easygoing</h4>
+
+			<input type = "radio" name="u" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="u" id = "r2" >Agree <br>
+			<input type = "radio" name="u" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="u" id  ="r4">Disagree <br>
+			<input type="radio" name="u" id = "r5">Strongly Disagree <br>
+
+
+			<hr>
+			<h4>11) He loves to be challenged</h4>
+			<input type = "radio" name="w" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="w" id = "r2" >Agree <br>
+			<input type = "radio" name="w" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="w" id  ="r4">Disagree <br>
+			<input type="radio" name="w" id = "r5">Strongly Disagree <br>
+
+			<hr>
+			<h4>12) He prefers to dress casually </h4>
+			<input type = "radio" name="x" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="x" id = "r2" >Agree <br>
+			<input type = "radio" name="x" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="x" id  ="r4">Disagree <br>
+			<input type="radio" name="x" id = "r5">Strongly Disagree <br>
+
+			<hr>
+
+			<h4>13) He values freedom very highly</h4>
+
+			<input type = "radio" name="z" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="z" id = "r2" >Agree <br>
+			<input type = "radio" name="z" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="z" id  ="r4">Disagree <br>
+			<input type="radio" name="z" id = "r5">Strongly Disagree <br>
+
+			<hr>
+			<h4>14) He makes you feel safe </h4>
+			<input type = "radio" name="za" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="za" id = "r2" >Agree <br>
+			<input type = "radio" name="za" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="za" id  ="r4">Disagree <br>
+			<input type="radio" name="za" id = "r5">Strongly Disagree <br>
+
+			<hr>
+			<h4> 15) He can be aggressive</h4>
+			<input type = "radio" name="zb" id = "r1">Agree Strongly <br>
+			<input type = "radio" name="zb" id = "r2" >Agree <br>
+			<input type = "radio" name="zb" id = "r3" checked="True">Medium <br>
+			<input type = "radio" name="zb" id  ="r4">Disagree <br>
+			<input type="radio" name="zb" id = "r5">Strongly Disagree <br>
+
+
+			<br>
+			<br>
+			<br>
+
+
+			<button align = "middle" onclick = "myfunction()">Submit
+			</button>
+			</div>	
+			</div>
+	
+			
+
+
+	</p>
+
+
+</body>
+</html>

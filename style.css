@@ -3,13 +3,61 @@ body{
 	background-color: hsl(32, 100%, 97%);
 }
 h1{
-	text-indent: 30%;
+	text-indent: 20%;
+	font-size: 40px;
 }
 div{
-	background-color:hsl(32, 100%, 97%);
+	text-indent: 
+
+  background-color:hsl(32, 100%, 97%);
 	font-family: "Courier"
+
+}
+.column {
+  float: left;
+  width: 25.33%;
+  padding: 5px;
 }
 
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h4{
+	font-weight:bold;
+	font-size: 20px;
+}
+ #outer {
+            margin-left: 40px; /*center*/
+            width:100%;
+            
+        }
+
+#inner {
+        text-indent: 
+		background-color:hsl(32, 100%, 97%);
+		font-family: "Courier"
+            /*move the whole container 50px to the left side*/
+            margin-left:-100px; 
+            margin-right:100px;
+            /*or move the whole container 50px to the right side*/
+            /*
+            margin-left:50px; 
+            margin-right:-50px;
+            */
+        }
+
+button{
+    height:40px; 
+    width:100px; 
+    margin: -20px -50px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    background-color: hsl(25, 80%, 98%) ;
+}
 
 
 
